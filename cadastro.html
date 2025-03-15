@@ -1,0 +1,76 @@
+<html>
+    <!--Aula Desenvolvimento WEB I -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de Formulário</title>
+    </head>
+    <body bgcolor="#191970" text="white">
+        <form name="frm_cadastro">
+            <center>
+                <marquee behavior="alternate" scrollamount="60">
+                    <h1><b><u>CADASTRO DE CLIENTES</u></h1>
+                </marquee>
+                </center>
+            <fieldset>
+                <legend>DADOS PESSOAIS:</legend>
+                <p>
+                    <label>Nome do Cliente:</label><br>
+                    <input type="text" value="" size="60" maxlength="60" required="yes"><p>
+                    
+                    <label>Data de Nascimento:</label>
+                    <input type="date" value="dd-mm-aaaa"><p>
+                    
+                    <label>Senha:</label>
+                    <input type="password" value="" size="20" maxlength="20"><p>
+                    
+                    <label>Selecione sua idade:</label>
+                    <input type="number" min="1" max="100"><p>
+                    
+                    <label>Selecine uma cidade:</label>
+                    <select name="cidades">
+                        <option value="SA">Santo André</option>
+                        <option value="SBC">São Bernardo</option>
+                        <option value="SCS">São Caetano</option>
+                        <option value="MA">Mauá</option>
+                    </select> <p>
+
+                    <label>Selecione os cursos de seu interesse:</label>
+                    <ol>
+                        <li><input type="checkbox" name="cursos">HTML</li>
+                        <li><input type="checkbox" name="cursos">CSS</li>
+                        <li><input type="checkbox" name="cursos">JAVASCRIPT</li>
+                        <li><input type="checkbox" name="cursos">PHP</li>
+                        <li><input type="checkbox" name="cursos">PYTHON</li>
+                    </ol> <p>
+                    
+                    <label>Observações Gerais:</label><br>
+                    <textarea cols="100" rows="10">Digite aqui seu comentário</textarea>
+            </fieldset>
+            <p>
+            <fieldset>
+                <legend>Selecione um tema:</legend>
+                    <input type="radio" name="cor" onclick="document.bgColor='SlateGray';fgColor='black'">Cinza &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cor" onclick="document.bgColor='#006400';fgColor='white'">Verde &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cor" onclick="document.bgColor='DarkRed';fgColor='#EE82EE'">Vermelho &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cor" onclick="document.bgColor='black';fgColor='white'">Preto &nbsp;&nbsp;&nbsp;
+                    <p>
+
+                    <center>
+                        <input type="submit" value="ENVIAR">&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="LIMPAR">
+                    </center>
+                </fieldset>
+                <p>
+                    <center>
+                        <a href="https://www.fatecmaua.com.br/">Informações sobre a Fatec Mauá</a><br>
+                        <a href="https://www.fatecmaua.com.br/"><img src="logo_fatec.png" width="200" height="80"></a><br>
+                    </center>
+
+                
+               
+
+        </form>
+
+    </body>
+    
+</html>
